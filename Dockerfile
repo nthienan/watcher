@@ -5,6 +5,7 @@ RUN python setup.py clean bdist_wheel
 FROM alpine:3.10.1
 
 ENV TZ=Asia/Bangkok
+ENV WATCH_DIR=/var/watcher
 
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \

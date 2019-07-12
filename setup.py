@@ -7,7 +7,7 @@ from setuptools import setup, Command
 
 here = path.abspath(path.dirname(__file__))
 name = 'watcher'
-version = '1.0.1'
+version = '1.0.2'
 
 
 class CleanCommand(Command):

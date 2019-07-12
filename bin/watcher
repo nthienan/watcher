@@ -34,5 +34,5 @@ if __name__ == "__main__":
 
     opts = parse_opts()
     signal.signal(signal.SIGTERM, sigterm_handler)
-    application = Application(**cfg)
+    application = Application(opts)
     sys.exit(application.run())
